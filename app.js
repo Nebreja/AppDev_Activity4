@@ -5,7 +5,7 @@ const app = express()
 
 app.set('view engine', 'ejs');
 
-app.get('/', routes);
+app.use('/', routes);
 
 app.listen(3000, ()=>{
     console.log('Server running on http://localhost:3000')
